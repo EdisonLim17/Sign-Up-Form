@@ -6,3 +6,83 @@
     font-style: normal;
 
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+.side-panel {
+    position: relative;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    height: 100vh
+}
+
+.title {
+    position: absolute;
+    width: 100%;
+    top: 35vh;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(30, 30, 30, .5);
+}
+
+.title p {
+    font-family: norsebold, 'Times New Roman', Times, serif;
+    font-size: 120px;
+    color: white;
+}
+
+.side-panel-footer {
+    margin-bottom: 20px;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+}
+
+.form {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+
+    background-color: #333;
+}
+
+.form-header {
+    flex: 2;
+    background: #eee;
+}
+
+.form-body {
+    flex: 4;
+    background-color: white;
+}
+
+.form-end {
+    flex: 3;
+    background-color: #eee;
+}
+
+@media only screen and (min-width: 1920px) {
+    .side-panel {
+        width: 7px;
+    }
+    
+    .form {
+        flex: 1;
+    }
+}
