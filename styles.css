@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'norsebold';
-    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
-         url('fonts/norse-bold-webfont.woff') format('woff');
+    font-family: 'kaushan_scriptregular';
+    src: url('fonts/kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('fonts/kaushanscript-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -41,6 +41,7 @@ body {
     width: 100%;
     height: 15vh;
     top: 25vh;
+    padding-right: 30px;
 
     display: flex;
     justify-content: center;
@@ -50,8 +51,8 @@ body {
 }
 
 .title p {
-    font-family: norsebold, 'Times New Roman', Times, serif;
-    font-size: 120px;
+    font-family: 'kaushan_scriptregular', 'Times New Roman', Times, serif;
+    font-size: 100px;
     color: #ffffff;
 }
 
@@ -91,6 +92,11 @@ body {
 
 .main-header #first-par {
     margin-bottom: 0;
+}
+
+.main-header strong {
+    font-weight: 1000;
+    color: #ff0000;
 }
 
 .form-container {
